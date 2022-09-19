@@ -12,9 +12,11 @@
     "@ory/client": "^0.2.0-alpha.48",
     "@ory/integrations": "^0.2.8",
     "@ory/kratos-client": "^0.0.0-next.a36dda23f209",
+    "antd": "^4.23.2",
     "next": "12.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.4.0"
   },
   "devDependencies": {
     "@types/node": "18.7.18",
