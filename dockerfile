@@ -12,7 +12,6 @@ RUN yarn build
 FROM node:lts as runner
 WORKDIR /testproject
 ENV NODE_ENV production
-# If you are using a custom next.config.js file, uncomment this line.
 COPY --from=builder /testproject/next.config.js ./
 COPY --from=builder /testproject/public ./public
 COPY --from=builder /testproject/.next ./.next
