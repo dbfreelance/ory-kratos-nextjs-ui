@@ -16,6 +16,7 @@ ENV NODE_ENV production
 COPY --from=builder /testproject/next.config.js ./
 COPY --from=builder /testproject/public ./public
 COPY --from=builder /testproject/.next ./.next
+COPY --from=builder /testproject/.eslintrc.json ./.eslintrc.json
 COPY --from=builder /testproject/node_modules ./node_modules
 COPY --from=builder /testproject/package.json ./package.json
 COPY --from=builder /testproject/styles ./styles
